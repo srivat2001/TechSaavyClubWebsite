@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>TechSaavy Club</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/register.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="shortcut icon" href="images/techsaavy.svg" type="image/x-icon">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="images/techsaavy.svg" alt="logo" /></a>
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars" onclick="preventscroll()"></i>
+    </label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="event.html">Events</a></li>
+      <li><a   href="about.html">About us</a></li>
+      <li><a class="active" href="career.html">Careers</a></li>
+      <li><a href="register.html">Register</a></li>
+
+    </ul>
+  </nav>
+	<script>
+	function preventscroll(){
+		
+		document.getElementsByTagName("body")[0].classList.toggle("scrolldeny");
+	}
+	
+	</script>
+	<style>
+		
+	</style>
+	<div class="curvedbgmobile">
+<div class="bgcurved"></div>
+	<div class="bgcurved1"></div>
+		</div>
+  <div class="home">
+    <div class="text">
+      <h1>Register here</h1>
+    </div>
+
+ 
+  </div>
+	
+<div class="container3">
+
+	<div class="container3main">
+    <div class="box">
+      <div class="top-bar"></div>
+      <div class="top">
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+      </div>
+      <div class="content4">
+            <div class="icon">
+        <ion-icon name="diamond-outline"></ion-icon>
+      </div>
+        <strong>Industry</strong>
+		  <p>Industries register here to work with us!</p>
+				   <a href="https://forms.gle/wGghGkfwMoNSBdZdA" target="_blank" class="button-65">Register</a>
+      
+      </div>
+    </div>
+    <div class="box">
+      <div class="top-bar"></div>
+      <div class="top">
+        <div>
+          <i class="fa fa-check-circle" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="content4">
+        <img src="images/cfi.png" alt="Sanjay R - Founder & Associate Club Head">
+        <strong>Alumni</strong>
+ <p>Alumni, Register here to give your contribution!</p>
+		   <a href="https://forms.gle/HHg38EqsTWRXiWT4A" target="_blank" class="button-65">Register</a>
+      </div>
+    </div>
+    <div class="box">
+      <div class="top-bar"></div>
+      <div class="top">
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+      </div>
+      <div class="content4">
+        <img src="images/vdr.png" alt="Shivapriya PS - Design Head">
+        <strong>Members</strong>
+		   <p>Students, register here to shape your future!</p>
+ <a href="https://forms.gle/mMYA9zf8uPY8D9cK8" target="_blank" class="button-65">Register</a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div w3-include-html="footer.html"></div> 
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+    includeHTML()
+    </script> 
+
+</body>
+
+</html>
