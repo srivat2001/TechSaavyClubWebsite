@@ -135,6 +135,7 @@ a{
 	.home .text h1 {
 			
 			margin-top: 10px;
+      transition: 1s all;
 		}
 		.home .img img {
   width: 62%;
